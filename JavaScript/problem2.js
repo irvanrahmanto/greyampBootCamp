@@ -41,20 +41,20 @@ const Fruit = {
 
 // Validation function condition - alternatif 2
 
-let isFruit = function (fruitName) {
-    let isCountFruit = function (quantity) {
-        if (quantity <= 0) {
-            console.log('You dont have fruit on your bags! Please input quantity first');
-        } else {
-            let calcBuy = Fruit[fruitName].price * Fruit[fruitName].quantity * quantity;
-            console.log(`The price of ${quantity} ${fruitName} juice will be ${calcBuy} Rupiah`);
-        }
-    }
-    return isCountFruit;
-}
+export let isFruit = function (fruitName) {
 
-const result = isFruit('kiwi');
-result(4);
+    if (Fruit[fruitName]) {
+        let isCountFruit = function (quantity) {
+            if (quantity <= 0) {
+                console.log('You dont have fruit on your bags! Please input quantity first');
+            } else {
+                let calcBuy = Fruit[fruitName].price * Fruit[fruitName].quantity * quantity;
+                console.log(`The price of ${quantity} ${fruitName} juice will be ${calcBuy} Rupiah`);
+            }
+        }
+        return isCountFruit;
+    }
+}
 
 
 

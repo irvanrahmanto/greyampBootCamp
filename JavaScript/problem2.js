@@ -18,6 +18,9 @@ output = "the price of 1 apple juice will be 500"
 
 */
 
+// Initialized the Fruit object
+
+// Alternatif 1
 
 const Fruit = {
     oranges: { price: 100, quantity: 2 },
@@ -35,6 +38,8 @@ const Fruit = {
 //         return isCountFruit;
 
 // }
+
+// Validation function condition - alternatif 2
 
 let isFruit = function (fruitName) {
     let isCountFruit = function (quantity) {

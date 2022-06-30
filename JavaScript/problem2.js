@@ -37,6 +37,7 @@ const Fruit = {
 // }
 
 // Alternatif 2
+// For creating the logic in the function
 
 let isFruit = function (fruitName) {
     let isCountFruit = function (quantity) {

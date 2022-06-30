@@ -18,6 +18,9 @@ output = "the price of 1 apple juice will be 500"
 
 */
 
+// Initialized the Fruit object
+
+// Alternatif 1
 
 const Fruit = {
     oranges: { price: 100, quantity: 2 },
@@ -35,24 +38,6 @@ const Fruit = {
 //         return isCountFruit;
 
 // }
-
-// Alternatif 2
-// For creating the logic in the function
-
-let isFruit = function (fruitName) {
-    let isCountFruit = function (quantity) {
-        if (quantity <= 0) {
-            console.log('You dont have fruit on your bags! Please input quantity first');
-        } else {
-            let calcBuy = Fruit[fruitName].price * Fruit[fruitName].quantity * quantity;
-            console.log(`The price of ${quantity} ${fruitName} juice will be ${calcBuy} Rupiah`);
-        }
-    }
-    return isCountFruit;
-}
-
-const result = isFruit('kiwi');
-result(4);
 
 
 

@@ -36,6 +36,8 @@ const Fruit = {
 
 // }
 
+// Alternatif 2
+
 let isFruit = function (fruitName) {
     let isCountFruit = function (quantity) {
         if (quantity <= 0) {

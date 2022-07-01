@@ -1,12 +1,21 @@
 {
   "name": "import",
   "version": "1.0.0",
-  "description": "",
+  "description": "Learn how to use js",
   "main": "Boolean.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier *.js --write",
+    "print-hello": "echo hello Irvan!"
   },
-  "author": "",
+  "author": "@irvanrahmanto",
   "license": "ISC",
-  "type" : "module"
+  "type": "module",
+  "dependencies": {
+    "date-fns": "^2.28.0",
+    "node-fetch": "^3.2.6"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  }
 }

@@ -1,0 +1,40 @@
+/* Card 1 */
+
+body {
+    /* background-color: #bdc3c7; */
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 40%;
+    text-align: center;
+    float: left;
+    padding: 15px;
+    width: 20%;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 85px;
+    color: #34495e;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+/* flexbox tecnic */
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    background-color: DodgerBlue;
+}
+
+.flex-container>div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}

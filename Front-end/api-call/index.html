@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>User Data</title>
+</head>
+
+<body>
+    <h2>User Table Information</h2>
+
+    <button onclick="deleteRow()">Remove</button>
+
+    <div class="flex-container">
+        <table class="table table-stripped">
+            <thead>
+                <tr>
+                    <th>User ID</th>
+                    <th>Name</th>
+                    <th>User Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Website</th>
+                    <th>Street</th>
+                    <th>Suite</th>
+                    <th>City</th>
+                    <th>Zipcode</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                    <th>Company-Name</th>
+                    <th>Catch-Phrase</th>
+                    <th>Bs</th>
+                </tr>
+            </thead>
+            <tbody id="data" class="deleteData">
+                <!-- The JSON data will be output here using javaScript -->
+            </tbody>
+        </table>
+    </div>
+    <script src="./javascript.js"></script>
+
+</body>
+
+</html>

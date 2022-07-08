@@ -30,6 +30,9 @@ class ClassComponent extends React.Component {
 
     // Every method component, we should have render! in every render must have return
     render() {
+        let { counter } = this.state;
+        let { toggleStateValue } = this.props
+
         console.log(this.props.toggleStateValue)
         console.log("My counter value is : ",this.state.counter)
         return ( 

@@ -3,14 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 // import Homework from './Homework';
+import MyAppRoutes from './Routes/MyAppRoutes';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App></App>
-    {/* <Homework></Homework> */}
-  </React.StrictMode>
+  // <React.StrictMode>
+  //   <App></App>
+    
+  //   {/* <Homework></Homework> */}
+  // </React.StrictMode>
+  <MyAppRoutes></MyAppRoutes>
 );
 
 // If you want to start measuring performance in your app, pass a function

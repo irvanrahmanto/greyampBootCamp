@@ -64,11 +64,14 @@ class LifeCycleMethods extends React.Component {
 
 
     render(){
+        let {counter, obj} = this.state;
         console.log('My counter is :', this.state.counter)
         // console.log('My Object is :', this.state.obj)
         // console.log(prevProps.newObject, this.state.obj)
         return(
-            <h1>This is your lifecycle component : {this.state.counter}</h1>
+            <div>
+                <h1> This is your lifecycle component: {this.state.counter} </h1> <p> {this.state.obj.fname} </p>
+            </div>
         )
     }
 }

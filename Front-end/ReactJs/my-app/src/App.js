@@ -23,7 +23,6 @@ class App extends React.Component{
         lname: "Rahmanto"
       },
       showComponent: true
-      // userData: []
     }
   }
 
@@ -61,6 +60,8 @@ class App extends React.Component{
       <div className="App">
         <header className="App-header">
           <UserTable></UserTable>
+
+
         {/* {
           this.state.post.map(post => {
             return <UserTable></UserTable>

@@ -4,6 +4,8 @@ import React from "react";
 import CountComponent from './components/counter-component/CountComponent';
 import ClassComponent from './components/class-component/ClassComponent';
 
+import UserTable from './components/homework-component/UserTable';
+
 // import ClassComponent
 import BookAssignment from './components/class-component/BookAssignment';
 
@@ -21,6 +23,7 @@ class App extends React.Component{
         lname: "Rahmanto"
       },
       showComponent: true
+      // userData: []
     }
   }
 
@@ -57,13 +60,20 @@ class App extends React.Component{
     return ( 
       <div className="App">
         <header className="App-header">
+          <UserTable></UserTable>
+        {/* {
+          this.state.post.map(post => {
+            return <UserTable></UserTable>
+          })
+        } */}
+        
 
         {/* 1 st way to call component */}
         {/* <LifeCycleMethods></LifeCycleMethods> */}
 
         {/* 2nd way to call component */}
 
-        {
+        {/* {
           this.state.showComponent ?
           <LifeCycleMethods updateMyCounter = {11}
           newObject = {this.state.objectForChild} /> : null
@@ -75,7 +85,7 @@ class App extends React.Component{
 
 
          <h1> This is my form </h1> 
-         <Forms></Forms>
+         <Forms></Forms> */}
 
         {/* <BookAssignment></BookAssignment>
 

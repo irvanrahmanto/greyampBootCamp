@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+
+.App {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    background-color: #f4faf6;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    /* background-color: #ff;     */
+    line-height: 44px;
+    text-decoration: none solid rgb(255, 255, 255); 
+    text-align: center; 
+    word-spacing: 0px;
+    color: white;
+}
+
+input {
+    /* display: block; */
+    height: 54px; 
+    width: 763.325px;
+    padding: 1px 2px 1px 12px;
+    min-height: auto; 
+    min-width: auto;
+    margin-bottom: 20px;
+}
+
+/* Seperate */
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    background-color: #282a35;
+    background-image: url(./Img/new.jpg);
+    height: 500px;
+    width: 1519.2px;
+    padding: 100px 10px 100px 10px;
+    min-height: auto;
+    min-width: auto;
+}
+
+.flex-container>div {
+    background-color: #f1f1f1;
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+
+.ButtonSearch {
+    background-color: #EA4C89;
+    border-radius: 18px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    /* margin-top: 25px; */
+    width: 200px;
+    margin: auto;
+}
+
+.ButtonSearch:hover,
+.ButtonSearch:focus {
+    background-color: #F082AC;
+}

@@ -1,8 +1,13 @@
 // import logo from './mufc2.png';
 import './App.css';
+// import '../src/components/login-form/LoginForm.css'
 import React from "react";
 import CountComponent from './components/counter-component/CountComponent';
 import ClassComponent from './components/class-component/ClassComponent';
+
+import UserTable from './components/homework-component/UserTable';
+
+import FunctionalComponent from './components/function-component/FunctionalComponent';
 
 // import ClassComponent
 import BookAssignment from './components/class-component/BookAssignment';
@@ -10,6 +15,9 @@ import BookAssignment from './components/class-component/BookAssignment';
 // import Forms from '/components/class-component/Forms'
 import Forms from './components/class-component/Forms';
 import LifeCycleMethods from './components/LifeCycleMethod';
+
+import LoginForm from './components/login-form/LoginForm';
+import { Link } from 'react-router-dom';
 
 
 class App extends React.Component{
@@ -26,6 +34,9 @@ class App extends React.Component{
 
   componentDidMount(){
     console.log("App.js is mounted")
+    this.setState({
+      showComponent: false
+    })
   }
 
   
@@ -55,15 +66,28 @@ class App extends React.Component{
 
   render(){
     return ( 
-      <div className="App">
-        <header className="App-header">
+      <div className='App'>
+        <header className='App-Header'>
+        <LoginForm></LoginForm>
+        <FunctionalComponent></FunctionalComponent>
+        <Link to="/LoginForm">Click here to go to Login Form</Link>
+        {/* <ClassComponent childFunction = {this.chi} ></ClassComponent> */}
+          {/* <UserTable></UserTable> */}
+
+
+        {/* {
+          this.state.post.map(post => {
+            return <UserTable></UserTable>
+          })
+        } */}
+        
 
         {/* 1 st way to call component */}
         {/* <LifeCycleMethods></LifeCycleMethods> */}
 
         {/* 2nd way to call component */}
 
-        {
+        {/* {
           this.state.showComponent ?
           <LifeCycleMethods updateMyCounter = {11}
           newObject = {this.state.objectForChild} /> : null
@@ -75,7 +99,7 @@ class App extends React.Component{
 
 
          <h1> This is my form </h1> 
-         <Forms></Forms>
+         <Forms></Forms> */}
 
         {/* <BookAssignment></BookAssignment>
 
